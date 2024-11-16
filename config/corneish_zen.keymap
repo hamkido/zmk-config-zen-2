@@ -40,6 +40,16 @@
             bindings = <&mt LC(LEFT_BRACKET) ESCAPE>;
             key-positions = <0 1>;
         };
+
+        q {
+            bindings = <&kp TILDE>;
+            key-positions = <10 11>;
+        };
+
+        w {
+            bindings = <&kp PIPE>;
+            key-positions = <22 23>;
+        };
     };
 
     keymap {
@@ -55,10 +65,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E         &kp R      &kp T       &kp Y        &kp U  &kp I      &kp O    &kp P        &kp BSPC
-&kp LCTRL       &kp A  &kp S  &kp D         &kp F      &kp G       &kp H        &kp J  &kp K      &kp L    &kp SEMI     &kp SQT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V      &kp B       &kp N        &kp M  &kp COMMA  &kp DOT  &lt 1 SLASH  &kp RIGHT_SHIFT
-                              &kp LEFT_ALT  &kp SPACE  &kp LGUI    &lt 3 ENTER  &mo 2  &tog 1
+&kp TAB         &kp Q  &kp W  &kp E         &kp R      &kp T       &kp Y        &kp U  &kp I      &kp O    &kp P      &kp BSPC
+&kp LCTRL       &kp A  &kp S  &kp D         &kp F      &kp G       &kp H        &kp J  &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V      &kp B       &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_SHIFT
+                              &kp LEFT_ALT  &kp SPACE  &kp LGUI    &lt 3 ENTER  &mo 2  &mo 1
             >;
         };
 
@@ -72,10 +82,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &trans        &trans        &trans        &trans        &trans          &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                    &trans        &trans        &trans          &kp INS          &kp DEL          &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
+&trans  &trans  &trans  &trans  &trans  &trans    &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
+                        &trans  &trans  &trans    &kp INS          &kp DEL          &trans
             >;
         };
 
